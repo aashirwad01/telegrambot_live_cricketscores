@@ -1,5 +1,10 @@
+
+
+
+
 var content=document.querySelector(".content");
-// content.innerHTML="I am back";
+
+
 
 var url='https://indian-news-live.p.rapidapi.com/news/cricket'
 
@@ -10,24 +15,27 @@ var options = {
   method: 'GET',
   headers: {
     'x-rapidapi-host': 'indian-news-live.p.rapidapi.com',
-    'x-rapidapi-key': 'cd30dfcf79mshc5798de5bba6226p13e5a6jsnc7b7e12f67aa'
+    'x-rapidapi-key': 'cd30dfcf79mshc5798de5bba6226p13e5a6jsnc7b7e12f67aa',
   }
 };
 
 async function getapi(url,options){
     const response = await fetch(url,options);
     var data = await response.json();
-    console.log(data);
+    
     if (response){
         hideloader();
     }
 
     show(data);
-    
+   
 }
 
 
 getapi(url,options);
+
+
+
 
 function hideloader(){
     content.innerHTML="Loading Content";
