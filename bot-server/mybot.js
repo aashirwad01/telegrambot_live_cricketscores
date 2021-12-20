@@ -30,19 +30,37 @@ var fetchUpdates =  async(options) => {
       throw e;
     }
   }
+  bot.telegram.setMyCommands([
+    { command: '/start', description: 'start a dialogue with CricNews' },
+    { command: '/help', description: 'know different and functionalities available' },
+    { command: '/about', description: 'to know more about bot maker' },
+    { command: '/cricket', description: 'get cricket news update' }
+  ])
 
-
-
-bot.hears("cricket", async (ctx) => {
+bot.command("cricket", async (ctx) => {
     
     try {
+      ctx.reply(`${Date()}`);
       ctx.reply("⌛️ Please Wait It will take few seconds to grab Updates"); // bot will send a reply to users. 
      
       const values = await fetchUpdates(options);
       console.log(`done `);
     
+    
     for (let r of values.data){
-        ctx.reply(r.title);
+       
+        ctx.reply(`
+        Details:
+ ${r.title}
+
+Find the complete article at :
+
+      ${r.url}
+        ${r.img}
+        `);
+
+        
+        
     }
      
       
@@ -54,43 +72,25 @@ bot.hears("cricket", async (ctx) => {
 
 
 bot.start(ctx => ctx.reply(`
-Hi, I'm a simple bot to give Daily Cricket News (please write /help to know how to use)
+Hi, I'm a simple bot to give Daily Cricket News. 
+(please write /help to know how to use)
+Visit site https://cric-newsupdate.netlify.app/ 
 `))
 
 bot.command('about', (ctx) => {
-    ctx.reply(`Hey, my name @aashirwadd and i created using Node js to get Cricket News. `)
+    ctx.reply(`Hey, my name @aashirwadd and i created using Node js to get Cricket News. You can also visit the site https://cric-newsupdate.netlify.app/ `)
 })
 
 bot.help(ctx => ctx.reply(`
-   Write the word 'cricket' to get cricket updates . Write /about to know about me.
+   Write /cricket to get cricket updates. 
+  Write /about to know about me.
+  Send a sticker to get emoji in return.
 `))
 
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 
-// bot.hears('cricket', function(url,options){
-
-// })
 
 
 
-// bot.hears('updates', (ctx, next) => {
-//     console.log(ctx.from)
-//     bot.telegram.sendMessage(ctx.chat.id, 'Do you want to get Cricket News Updates?', requestUpdatesKeyboard);
-
-// })
-
-// const requestUpdatesKeyboard = {
-//     "reply_markup": {
-//         "one_time_keyboard": true,
-//         "keyboard": [
-//             [{
-//                 text: "Yes",
-//                 request_contact: true,
-//                 one_time_keyboard: true
-//             }],
-//             ["Cancel"]
-//         ]
-//     }
-// };
 
 bot.launch();
