@@ -1,9 +1,9 @@
 
 const { Telegraf } = require('telegraf')
 const axios = require("axios");
+require('dotenv').config();
 
-
-const bot=new Telegraf('5037017667:AAHbn_OeS3GJEJGMDJiamSuHoikEG49L4AA');
+const bot=new Telegraf(process.env.TEL_KEY);
 
 
 
@@ -15,7 +15,7 @@ var options = {
   method: 'GET',
   headers: {
     'x-rapidapi-host': 'indian-news-live.p.rapidapi.com',
-    'x-rapidapi-key': 'cd30dfcf79mshc5798de5bba6226p13e5a6jsnc7b7e12f67aa',
+    'x-rapidapi-key': process.env.API_KEY,
   }
 };
 
@@ -39,7 +39,7 @@ bot.hears("cricket", async (ctx) => {
       ctx.reply("⌛️ Please Wait It will take few seconds to grab Updates"); // bot will send a reply to users. 
      
       const values = await fetchUpdates(options);
-    console.log(`done `);
+      console.log(`done `);
     
     for (let r of values.data){
         ctx.reply(r.title);
@@ -58,7 +58,7 @@ Hi, I'm a simple bot to give Daily Cricket News (please write /help to know how 
 `))
 
 bot.command('about', (ctx) => {
-    ctx.reply(`Hey, my name @aashirwadd and i created using Node js to get cricket news. `)
+    ctx.reply(`Hey, my name @aashirwadd and i created using Node js to get Cricket News. `)
 })
 
 bot.help(ctx => ctx.reply(`
