@@ -1,4 +1,5 @@
 .env
-/server/node_modules
-/server/package-lock.json
-/server/package.json
+/bot-server/node_modules
+/bot-server/package-lock.json
+/bot-server/package.json
+
