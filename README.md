@@ -20,11 +20,14 @@ Site is hosted on [Updates site](https://cric-newsupdate.netlify.app/).
 ### Screenshot
 ![Cric-news Update Site](https://github.com/aashirwad01/telegrambot_live_cricketscores/blob/08d457416d524ce7d695d47fb5bd2b15662e5166/images/2.png)
 
+![Complete Site Image](https://github.com/aashirwad01/telegrambot_live_cricketscores/blob/9c46b9133469b89521a3df49c8f3abdb999754f7/images/3.png)
+
 ## How to use Telegram Bot
-- Go to telegram in the search box type @CricNewsUpdatebot
+- Go to Telegram 
+- In the search box type @CricNewsUpdatebot
 - Or click on the above bot link to be redirected.
 - This will direct to the Bot . Use the below mentioned commands to access bot.
-- The Telegram Bot Server is locally hosted so if you get error server not available . Please contact me through website on Linkedin , Github , Twitter.
+- The Telegram Bot Server is locally hosted so if you get error 'Server not available' . Please contact me through website on Linkedin , Github , Twitter.
 
 ## Bot Commands
 
