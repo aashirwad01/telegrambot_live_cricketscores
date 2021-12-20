@@ -3,7 +3,7 @@
 # CricNews
 The Telegram Bot Server is locally hosted so if you get error 'Server not available' . Please contact me through Cric-News Update Site on Linkedin , Github , Twitter . The link to aforementioned Site and Telegram Bot is below.
 
-[![Telegram](https://img.shields.io/website-up-down-green-red/http/monip.org.svg](https://t.me/CricNewsUpdatebot)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/CricNewsUpdatebot)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
