@@ -19,8 +19,9 @@ html {
   }
 
   .wrapper{
-    max-width: 80%;
-    margin: 20vh auto 5vh auto;
+    max-width: 540px;
+    height: 90vh;
+    margin: 15vh auto 5vh auto;
     border:10px solid rgba(0,0,0,0.8);
     border-bottom-width: 70px;
     border-radius:10px;
@@ -31,6 +32,10 @@ html {
 
   }
   
+  .wrapper >*{
+  flex:1 1 auto;
+  }
+  
   .content {
     padding:50px;
     background:white;
@@ -38,6 +43,7 @@ html {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+    
   }
 
   .app-header {
