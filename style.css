@@ -97,7 +97,7 @@ html {
  
   .wrapper{
     max-width: 540px;
-    height: 90vh;
+    height: 100vh;
     margin: 0vh auto 0vh auto;
     border:10px solid rgba(0,0,0,0.8);
     border-top-width: 30px;
