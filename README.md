@@ -20,11 +20,14 @@ Site is hosted on [Updates site](https://cric-newsupdate.netlify.app/).
 ### Screenshot
 ![Cric-news Update Site](https://github.com/aashirwad01/telegrambot_live_cricketscores/blob/08d457416d524ce7d695d47fb5bd2b15662e5166/images/2.png)
 
+![Complete Site Image](https://github.com/aashirwad01/telegrambot_live_cricketscores/blob/9c46b9133469b89521a3df49c8f3abdb999754f7/images/3.png)
+
 ## How to use Telegram Bot
-- Go to telegram in the search box type @CricNewsUpdatebot
+- Go to Telegram 
+- In the search box type @CricNewsUpdatebot
 - Or click on the above bot link to be redirected.
 - This will direct to the Bot . Use the below mentioned commands to access bot.
-- The Telegram Bot Server is locally hosted so if you get error server not available . Please contact me through website on Linkedin , Github , Twitter.
+- The Telegram Bot Server is locally hosted so if you get error 'Server not available' . Please contact me through website on Linkedin , Github , Twitter.
 
 ## Bot Commands
 
@@ -57,8 +60,30 @@ Site is hosted on [Updates site](https://cric-newsupdate.netlify.app/).
 ## License
 Cric-NewsUpdate
 
-Copyright (C) 2021 aashirwad01
+MIT License
+
+Copyright (c) 2021 AASHIRWAD KUMAR
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
 This program is free software: However give due credits to @aashirwad01 while using and redistributing the program.
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
 
 
