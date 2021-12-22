@@ -19,8 +19,9 @@ html {
   }
 
   .wrapper{
-    max-width: 540px;
-    height: 90vh;
+    
+    max-width: 800px;
+    
     margin: 15vh auto 5vh auto;
     border:10px solid rgba(0,0,0,0.8);
     border-bottom-width: 70px;
@@ -90,3 +91,25 @@ html {
   text-shadow:3px 3px 0 rgba(0,0,0,0.1);
   padding-bottom: 1rem;
 }
+
+@media screen and (max-width: 480px){
+
+ 
+  .wrapper{
+    max-width: 540px;
+    height: 100%;
+    margin: 0vh auto 0vh auto;
+    border:10px solid rgba(0,0,0,0.8);
+    border-bottom-width: 70px;
+    border-radius:0.5px;
+    box-shadow:0 0 50px  rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    
+  
+  }
+
+  
+
+}
+
